@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Predict</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+		
+		}
+		
+		body{
+			background-color:rgb(98, 234, 189);
+			color:white;
+			margin: 0;
+		}
+		
+		div.header {
+		
+			background-color: rgb(12, 12, 12);
+			position:sticky;
+			top:0;
+			width:100%;
+		
+		}
+		
+		.header{
+			display:flex;
+			height: 80px;
+			justify-content: space-between;
+			align-items: center;
+			padding: 30px;
+			
+		}
+		
+		.navbar a{
+			display: inline-block;
+			justify-content: space-around;
+			text-decoration:underline;
+			color: #fafaf7;
+			font-weight: bold;
+			font-size: 20px;;
+			padding: 20px;
+		}
+		  
+		a:visited {
+			color:white;
+		}
+		  
+		a:hover {
+			color: hotpink;
+		}
+		  
+		a:active {
+			color: blue;
+		}
+		
+		h1{
+			text-align:start;
+			font-weight:bold;
+			margin: 0;
+			padding: 15px;
+		}
+		
+		h2{
+			color:deeppink;
+			margin-bottom:10px;
+		}
+		
+		.container{
+			text-align: center;
+			border: 5px solid black;
+			border-radius: 10px;
+			margin: 70px;
+		}
+		
+		textarea{
+			padding: 15px;
+			border-radius: 10px;
+		}
+		
+		.submit{
+			background-color:blue;
+			border: none;
+			color: white;
+			padding: 15px;
+			text-align: center;
+			font-weight: bold;
+			border-radius: 12px;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 20px;
+			cursor: pointer;
+		  }
+		
+		  img{
+			background-color:white;
+		  }
+		
+		  p{
+			font-weight: bold;
+			padding: 30px;
+			font-size: 40px;
+			color: deeppink;
+			font-style: italic;
+		  }
+		</style>
+</head>
+<!--<body>
+    <div class="header">
+		<h1>Fake News Detection</h1>
+	</div>
+    <div class="container">
+		<form action="/" method="post">
+			<br><br>
+			<h2>Check if the news is real or fake!</h2>
+			<textarea name="message" rows="13" cols="150" placeholder="Enter the news here..."></textarea>
+			<br>
+			<div>
+				<button type="submit">submit</button> 
+			</div>
+		</form>
+		
+	</div>
+</body>
+<body>-->
+	<h1>Fake News Detection</h1>
+	<div class="container">
+    <form action="/predict" method="post">
+		<br><br>
+			<h2>Check if the news is real or fake!</h2>
+        <textarea  rows="13" cols="150" name="message" required></textarea>
+        <br><br>
+		<button type="submit">Predict</button>
+		<br>
+		<br>
+    </form>
+</body>
+</html>
